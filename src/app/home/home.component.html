@@ -19,7 +19,6 @@
         </ul>
         <ul class="ml-auto d-flex align-items-center list-unstyled mb-0">
           <li class="nav-item dropdown mr-3"><i class="fas fa-bell" style="color:grey;font-size:20px;"></i></li>
-          <li class="nav-item dropdown mr-3"><i class="far fa-question-circle" style="color:grey;font-size:20px;"></i></li>
           <li class="nav-item dropdown mr-3"><i class="fas fa-cog" style="color:grey;font-size:20px;"></i></li>
           <li class="nav-item dropdown ml-auto"><img src="assets/img/avatar-6.jpg" alt="Harikrishnan" style="max-width: 2.5rem;" class="img-fluid rounded-circle shadow" />
             <div aria-labelledby="userInfo" class="dropdown-menu"><a href="#" class="dropdown-item"><strong class="d-block text-uppercase headings-font-family">Mark Stephen</strong><small>Web Developer</small></a>
@@ -40,8 +39,21 @@
         <!-- Create Post Section -->
         <section>
           <div class="row">
+            <div class="col-lg-3" style="padding-top: 1%;">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-lg-10" style="padding-top:3%;padding-right: 0px;">
+                      <button type="button" class="btn btn-primary" style="font-size: 12px;">
+                        <i class="far fa-image"></i>&nbsp; Your Pages (1)
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="col-lg-6" style="padding-top: 1%;">
-              <div class="card" style="margin-left: 50%; width: 100%;">
+              <div class="card" style="width: 100%;">
                 <div class="card-body">
                   <p style="color:gray">
                     <i class="far fa-file-alt" style="color: blue;font-size: 20px;"></i>
@@ -72,8 +84,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6" style="padding-top: 1%;">
-              <div class="card" style="margin-left: 50%;height: 35%;">
+            <div class="col-lg-3" style="padding-top: 1%;">
+              <div class="card">
                 <div class="card-body">
                   <div class="row">
                     <div class="col-lg-10" style="padding-top:3%;padding-right: 0px;">
@@ -91,8 +103,11 @@
         <!-- Stories Section -->
         <section>
           <div class="row text-dark">
-            <div class="col-lg-6" style="padding-top: 1%;">
-              <div class="card" style="margin-left: 50%;height: 100%;width: 100%;">
+            <div class="col-lg-3" style="padding-top: 1%;">
+              
+            </div>
+            <div class="col-md-6" style="padding-top: 1%;">
+              <div class="card" style="height: 100%;width: 100%;">
                 <div class="card-body">
                   <div class="row">
                     <div class="col-lg-3" style="padding-right: 0px;">
@@ -126,8 +141,11 @@
         <!-- Skeleton Template -->
         <section *ngIf="isLoading">
           <div class="row text-dark">
+            <div class="col-lg-3" style="padding-top: 1%;">
+              
+            </div>
             <div class="col-lg-6" style="padding-top: 1%;">
-              <div class="card" style="margin-left: 50%;height: 100%;width: 100%;">
+              <div class="card" style="height: 100%;width: 100%;">
                 <div class="card-body">
                   <div class="row">
                     <div class="fb-item">
@@ -202,8 +220,11 @@
         <!-- Post Template -->
         <section *ngIf="isLoading==false">
           <div class="row text-dark">
+            <div class="col-lg-3" style="padding-top: 1%;">
+              
+            </div>
             <div class="col-lg-6" style="padding-top: 1%;">
-              <div class="card" style="margin-left: 50%;width: 100%;margin-top: 1%;" *ngFor="let post of posts.slice().reverse()">
+              <div class="card" style="margin-top: 1%;" *ngFor="let post of posts.slice().reverse()">
                 <div class="card-body">
                   <div class="row">
                     <div class="fb-item">
@@ -247,7 +268,7 @@
       </footer>
 
       <!-- Chat Popup -->
-      <div class="container">
+      <div class="container" *ngIf="chatShow">
         <div class="row pt-3">
             <div class="chat-main">
                 <div class="col-md-12 chat-header rounded-top bg-primary text-white">
@@ -262,7 +283,7 @@
                             <i class="fa fa-circle text-success live-video mr-1" aria-hidden="true"></i>
                             <i class="fa fa-phone mr-2" aria-hidden="true"></i>
                             <i class="fa fa-cog mr-2" aria-hidden="true"></i>
-                            <i class="fa fa-times hide-chat-box" aria-hidden="true"></i>
+                            <a (click)="chatShow=false;"><i class="fa fa-times hide-chat-box" aria-hidden="true"></i></a>
                           </div>
                     </div>
                 </div>

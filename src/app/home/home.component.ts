@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit {
   posts: Post[] = [];
   liked:boolean;
   newLikeCount:number;
+  chatShow:boolean;
 
   constructor(
     private postsService:PostsService
@@ -23,6 +24,7 @@ export class HomeComponent implements OnInit {
     this.isLoading = true;
     this.newPostContent = "";
     this.liked = false;    
+    this.chatShow = true;
   }
 
   like(id)
