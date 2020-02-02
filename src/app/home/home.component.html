@@ -2,9 +2,9 @@
 
   <!-- Header Section -->
   <header class="header">
-      <div style="width:100%;" class="bg-white shadow roundy p-4 h-100 d-flex align-items-center justify-content-between">
+      <div style="width:100%;padding:1%" class="bg-white shadow roundy h-100 d-flex align-items-center justify-content-between">
         <div class="flex-grow-1 d-flex align-items-center">
-          <img style="width:50px;" src="assets/img/icon.png "/>
+          <img style="width:40px;" src="assets/img/icon.png "/>
           <form style="margin-left:30px;" id="searchForm" class="d-none d-lg-block">
             <div class="form-group position-relative mb-0">
               <input type="search" placeholder="Search" class="form-control form-control-sm border-0 no-shadow pl-4">
@@ -14,7 +14,7 @@
         </div>
         <ul class="ml-auto d-flex align-items-center list-unstyled mb-0">
           <li class="nav-item dropdown mr-3"><i class="fas fa-home" style="color:blue ;font-size:20px;"></i></li>
-          <li class="nav-item dropdown mr-3"><i class="fab fa-facebook-messenger" style="color:grey;font-size:20px;"></i></li>
+          <li class="nav-item dropdown mr-3"><a (click)="chatShow=true;"><i class="fab fa-facebook-messenger" style="color:grey;font-size:20px;"></i></a></li>
           <li class="nav-item dropdown mr-3"><i class="fas fa-user-friends" style="color:grey;font-size:20px;"></i></li>
         </ul>
         <ul class="ml-auto d-flex align-items-center list-unstyled mb-0">
@@ -40,17 +40,6 @@
         <section>
           <div class="row">
             <div class="col-lg-3" style="padding-top: 1%;">
-              <div class="card">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-lg-10" style="padding-top:3%;padding-right: 0px;">
-                      <button type="button" class="btn btn-primary" style="font-size: 12px;">
-                        <i class="far fa-image"></i>&nbsp; Your Pages (1)
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
             <div class="col-lg-6" style="padding-top: 1%;">
               <div class="card" style="width: 100%;">
@@ -101,7 +90,7 @@
         </section>
 
         <!-- Stories Section -->
-        <section>
+        <!-- <section>
           <div class="row text-dark">
             <div class="col-lg-3" style="padding-top: 1%;">
               
@@ -136,7 +125,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
 
         <!-- Skeleton Template -->
         <section *ngIf="isLoading">
