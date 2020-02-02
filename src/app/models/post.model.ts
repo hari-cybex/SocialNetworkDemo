@@ -4,6 +4,7 @@ export class Post{
     imageUrl:string;
     content:string;
     likeCount:number;
+    liked:boolean;
     commentCount:number;
     shareCount:number;
 

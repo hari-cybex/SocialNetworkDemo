@@ -219,9 +219,10 @@
                           </div>
                           <br/>
                           <div class="row">
-                            <i class="far fa-thumbs-up" style="margin-left:5%"></i>{{ post.likeCount }}
+                            <a style="margin-left:5%" (click)="like(post.id)" *ngIf="post.liked==false"><i class="far fa-thumbs-up"></i>{{ post.likeCount }}</a>
+                            <a id="likedBtn" (click)="unlike(post.id)" style="margin-left:5%" *ngIf="post.liked"><i class="fas fa-thumbs-up"></i>{{ post.likeCount }}</a>
                             <i class="far fa-comment" style="margin-left:5%"></i>{{ post.commentCount }}
-                            <i class="fas fa-share" style="margin-left:5%"></i>{{ post.shareCount }}
+                            <a style="margin-left:5%" (click)="share(post.id,post.content)"><i class="fas fa-share"></i>{{ post.shareCount }}</a>
                           </div>
                         </div>
                       </div>
@@ -265,7 +266,7 @@
                           </div>
                     </div>
                 </div>
-                <div class="chat-content">
+                <div class="chat-content" style="background-color: whitesmoke;">
                     <div class="col-md-12 chats border">
                         <ul class="p-0">
                             <li class="pl-2 pr-2 bg-primary rounded text-white text-center send-msg mb-1">
@@ -318,7 +319,7 @@
                 </div>
             </div>
         </div>
-    </div>
+      </div>
 
     </div>
 
