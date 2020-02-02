@@ -51,15 +51,18 @@ export class HomeComponent implements OnInit {
 
   PostContent()
   {
-    let postTemp = new Post();
-    postTemp.content = this.newPostContent;
-    postTemp.imageUrl = "assets/img/avatar-6.jpg";
-    postTemp.userName = "Harikrishnan";
-    postTemp.likeCount = 0;
-    postTemp.commentCount = 0;
-    postTemp.shareCount = 0;
-    this.posts.push(postTemp);
-    this.newPostContent = "";
+    if(this.newPostContent!=null&&this.newPostContent!="")
+    {
+      let postTemp = new Post();
+      postTemp.content = this.newPostContent;
+      postTemp.imageUrl = "assets/img/avatar-6.jpg";
+      postTemp.userName = "Harikrishnan";
+      postTemp.likeCount = 0;
+      postTemp.commentCount = 0;
+      postTemp.shareCount = 0;
+      this.posts.push(postTemp);
+      this.newPostContent = "";
+    }
   }
 
   ngOnInit() {

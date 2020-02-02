@@ -1,52 +1,7 @@
 <div id="container">
+
+  <!-- Header Section -->
   <header class="header">
-    <!-- <nav class="navbar navbar-expand-lg px-4 py-2 bg-white shadow"> -->
-      <!-- <ul class="ml-auto d-flex align-items-center list-unstyled mb-0">
-        <li class="nav-item">
-          <form id="searchForm" class="ml-auto d-none d-lg-block">
-            <div class="form-group position-relative mb-0">
-              <button type="submit" style="top: -3px; left: 0;" class="position-absolute bg-white border-0 p-0"><i class="o-search-magnify-1 text-gray text-lg"></i></button>
-              <input type="search" placeholder="Search ..." class="form-control form-control-sm border-0 no-shadow pl-4">
-            </div>
-          </form>
-        </li>
-        <li class="nav-item dropdown mr-3"><a id="notifications" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle text-gray-400 px-1"><i class="fa fa-bell"></i><span class="notification-icon"></span></a>
-          <div aria-labelledby="notifications" class="dropdown-menu"><a href="#" class="dropdown-item">
-              <div class="d-flex align-items-center">
-                <div class="icon icon-sm bg-violet text-white"><i class="fab fa-twitter"></i></div>
-                <div class="text ml-2">
-                  <p class="mb-0">You have 2 followers</p>
-                </div>
-              </div></a><a href="#" class="dropdown-item"> 
-              <div class="d-flex align-items-center">
-                <div class="icon icon-sm bg-green text-white"><i class="fas fa-envelope"></i></div>
-                <div class="text ml-2">
-                  <p class="mb-0">You have 6 new messages</p>
-                </div>
-              </div></a><a href="#" class="dropdown-item">
-              <div class="d-flex align-items-center">
-                <div class="icon icon-sm bg-blue text-white"><i class="fas fa-upload"></i></div>
-                <div class="text ml-2">
-                  <p class="mb-0">Server rebooted</p>
-                </div>
-              </div></a><a href="#" class="dropdown-item">
-              <div class="d-flex align-items-center">
-                <div class="icon icon-sm bg-violet text-white"><i class="fab fa-twitter"></i></div>
-                <div class="text ml-2">
-                  <p class="mb-0">You have 2 followers</p>
-                </div>
-              </div></a>
-            <div class="dropdown-divider"></div><a href="#" class="dropdown-item text-center"><small class="font-weight-bold headings-font-family text-uppercase">View all notifications</small></a>
-          </div>
-        </li>
-        <li class="nav-item dropdown ml-auto"><a id="userInfo" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><img src="assets/img/avatar-6.jpg" alt="Jason Doe" style="max-width: 2.5rem;" class="img-fluid rounded-circle shadow"></a>
-          <div aria-labelledby="userInfo" class="dropdown-menu"><a href="#" class="dropdown-item"><strong class="d-block text-uppercase headings-font-family">Mark Stephen</strong><small>Web Developer</small></a>
-            <div class="dropdown-divider"></div><a href="#" class="dropdown-item">Settings</a><a href="#" class="dropdown-item">Activity log       </a>
-            <div class="dropdown-divider"></div><a href="login.html" class="dropdown-item">Logout</a>
-          </div>
-        </li>
-      </ul> -->
-  
       <div style="width:100%;" class="bg-white shadow roundy p-4 h-100 d-flex align-items-center justify-content-between">
         <div class="flex-grow-1 d-flex align-items-center">
           <img style="width:50px;" src="assets/img/icon.png "/>
@@ -58,7 +13,7 @@
           </form>
         </div>
         <ul class="ml-auto d-flex align-items-center list-unstyled mb-0">
-          <li class="nav-item dropdown mr-3"><i class="fas fa-home" style="color:grey;font-size:20px;"></i></li>
+          <li class="nav-item dropdown mr-3"><i class="fas fa-home" style="color:blue ;font-size:20px;"></i></li>
           <li class="nav-item dropdown mr-3"><i class="fab fa-facebook-messenger" style="color:grey;font-size:20px;"></i></li>
           <li class="nav-item dropdown mr-3"><i class="fas fa-user-friends" style="color:grey;font-size:20px;"></i></li>
         </ul>
@@ -74,41 +29,17 @@
           </li>
         </ul>
       </div>
-    <!-- </nav> -->
   </header>
+
+  
   <div class="d-flex align-items-stretch">
-    <!-- <div id="sidebar" class="sidebar py-3">
-      <div class="text-gray-400 text-uppercase px-3 px-lg-4 py-4 font-weight-bold small headings-font-family">MAIN</div>
-      <ul class="sidebar-menu list-unstyled">
-            <li class="sidebar-list-item"><a href="index.html" class="sidebar-link text-muted active"><i class="o-home-1 mr-3 text-gray"></i><span>Home</span></a></li>
-            <li class="sidebar-list-item"><a href="charts.html" class="sidebar-link text-muted"><i class="o-sales-up-1 mr-3 text-gray"></i><span>Charts</span></a></li>
-            <li class="sidebar-list-item"><a href="tables.html" class="sidebar-link text-muted"><i class="o-table-content-1 mr-3 text-gray"></i><span>Tables</span></a></li>
-            <li class="sidebar-list-item"><a href="forms.html" class="sidebar-link text-muted"><i class="o-survey-1 mr-3 text-gray"></i><span>Forms</span></a></li>
-        <li class="sidebar-list-item"><a href="#" data-toggle="collapse" data-target="#pages" aria-expanded="false" aria-controls="pages" class="sidebar-link text-muted"><i class="o-wireframe-1 mr-3 text-gray"></i><span>Pages</span></a>
-          <div id="pages" class="collapse">
-            <ul class="sidebar-menu list-unstyled border-left border-primary border-thick">
-              <li class="sidebar-list-item"><a href="#" class="sidebar-link text-muted pl-lg-5">Page one</a></li>
-              <li class="sidebar-list-item"><a href="#" class="sidebar-link text-muted pl-lg-5">Page two</a></li>
-              <li class="sidebar-list-item"><a href="#" class="sidebar-link text-muted pl-lg-5">Page three</a></li>
-              <li class="sidebar-list-item"><a href="#" class="sidebar-link text-muted pl-lg-5">Page four</a></li>
-            </ul>
-          </div>
-        </li>
-            <li class="sidebar-list-item"><a href="login.html" class="sidebar-link text-muted"><i class="o-exit-1 mr-3 text-gray"></i><span>Login</span></a></li>
-      </ul>
-      <div class="text-gray-400 text-uppercase px-3 px-lg-4 py-4 font-weight-bold small headings-font-family">EXTRAS</div>
-      <ul class="sidebar-menu list-unstyled">
-            <li class="sidebar-list-item"><a href="#" class="sidebar-link text-muted"><i class="o-database-1 mr-3 text-gray"></i><span>Demo</span></a></li>
-            <li class="sidebar-list-item"><a href="#" class="sidebar-link text-muted"><i class="o-imac-screen-1 mr-3 text-gray"></i><span>Demo</span></a></li>
-            <li class="sidebar-list-item"><a href="#" class="sidebar-link text-muted"><i class="o-paperwork-1 mr-3 text-gray"></i><span>Demo</span></a></li>
-            <li class="sidebar-list-item"><a href="#" class="sidebar-link text-muted"><i class="o-wireframe-1 mr-3 text-gray"></i><span>Demo</span></a></li>
-      </ul>
-    </div> -->
     <div class="page-holder w-100 d-flex flex-wrap">
+      
       <div class="container-fluid px-xl-5">
+        
+        <!-- Create Post Section -->
         <section>
           <div class="row">
-            
             <div class="col-lg-6" style="padding-top: 1%;">
               <div class="card" style="margin-left: 50%; width: 100%;">
                 <div class="card-body">
@@ -118,51 +49,25 @@
                   </p>
                   <input type="text" class="form-control" (keyup.enter)="PostContent();" placeholder="What's on your mind, Hari?" style="width:100%;height:100px;" [(ngModel)]="newPostContent"/>
                   <div class="col-md-3" style="padding:3%;padding-right: 0px;">
-                    <div (click)="PostContent();" class="bg-hover-gradient-blue shadow roundy" *ngIf="newPostContent.length>0">
-                      <div>
-                        <div class="text">
-                          <p>&nbsp;&nbsp;<i class="far fa-image" style="color:blue"></i>&nbsp; Post</p>
-                        </div>
-                      </div>
+                    <div (click)="PostContent();" *ngIf="newPostContent.length>0">
+                      <button type="button" class="btn btn-primary" style="font-size: 12px;">
+                        <i class="far fa-image"></i>&nbsp;Post
+                      </button>&nbsp;&nbsp;
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-med-3" style="padding:3%;padding-right: 0px;">
-                      <div class="bg-hover-gradient-blue shadow roundy">
-                        <div>
-                          <div class="text">
-                            <p style="margin-top: 20%;">&nbsp;&nbsp;<i class="far fa-image" style="color:blue"></i>&nbsp; Gallery</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-med-3" style="padding:3%;padding-right: 0px;">
-                      <div class="bg-hover-gradient-red shadow roundy d-flex align-items-center justify-content-between mb-4">
-                        <div class="flex-grow-1 d-flex align-items-center">
-                          <div class="text">
-                            <p style="margin-top: 20%;">&nbsp;&nbsp;<i class="fas fa-user-tag"></i>&nbsp; Tag Friends</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-med-3" style="padding:3%;padding-right: 0px;">
-                      <div class="bg-hover-gradient-warning shadow roundy d-flex align-items-center justify-content-between mb-4">
-                        <div class="flex-grow-1 d-flex align-items-center">
-                          <div class="text">
-                            <p style="margin-top: 20%;">&nbsp;&nbsp;<i class="far fa-laugh"></i>&nbsp; Feeling</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-2" style="padding:3%;padding-right: 0px;">
-                      <div style="width: 10%;" class="bg-hover-gradient-gray-200 shadow roundy d-flex align-items-center justify-content-between mb-4">
-                        <div class="flex-grow-1 d-flex align-items-center">
-                          <div class="text">
-                            <p style="margin-top: 20%;"><i class="fas fa-ellipsis-v"></i></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="row col-lg-14">
+                    &nbsp;&nbsp;<button type="button" class="btn btn-primary" style="font-size: 12px;">
+                      <i class="far fa-image"></i>&nbsp;Gallery
+                    </button>&nbsp;&nbsp;
+                    <button type="button" class="btn btn-danger" style="font-size: 12px;">
+                      <i class="fas fa-user-tag"></i>&nbsp;Tag Friends
+                    </button>&nbsp;&nbsp;
+                    <button type="button" class="btn btn-warning" style="font-size: 12px;">
+                      <i class="far fa-laugh"></i>&nbsp;Feeling
+                    </button>&nbsp;&nbsp;
+                    <button type="button" class="btn btn-dark" style="font-size: 12px;">
+                      <i class="fas fa-ellipsis-v"></i>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -172,13 +77,9 @@
                 <div class="card-body">
                   <div class="row">
                     <div class="col-lg-10" style="padding-top:3%;padding-right: 0px;">
-                      <div class="bg-hover-gradient-blue shadow roundy d-flex align-items-center justify-content-between mb-4">
-                        <div class="flex-grow-1 d-flex align-items-center">
-                          <div class="text">
-                            <p><i class="far fa-image" style="color:blue"></i>&nbsp; Your Pages (1)</p>
-                          </div>
-                        </div>
-                      </div>
+                      <button type="button" class="btn btn-primary" style="font-size: 12px;">
+                        <i class="far fa-image"></i>&nbsp; Your Pages (1)
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -186,22 +87,43 @@
             </div>
           </div>
         </section>
+
+        <!-- Stories Section -->
         <section>
           <div class="row text-dark">
             <div class="col-lg-6" style="padding-top: 1%;">
               <div class="card" style="margin-left: 50%;height: 100%;width: 100%;">
                 <div class="card-body">
                   <div class="row">
-                    <div class="col-lg-3" style="padding-top:3%;padding-right: 0px;">
+                    <div class="col-lg-3" style="padding-right: 0px;">
                       Stories
                     </div>
-                    
+                  </div>
+                  <br/>
+                  <div class="row">
+                    <div class="card" style="width: 5rem;height: 7rem;">
+                      <img class="card-img-top" src="https://images.unsplash.com/photo-1526512340740-9217d0159da9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
+                    </div>&nbsp; &nbsp; 
+                    <div class="card" style="width: 5rem;height: 7rem;">
+                      <img class="card-img-top" src="https://previews.123rf.com/images/higyou/higyou0907/higyou090700027/5194086-front-view-of-a-3d-modern-building-vertical.jpg" alt="Card image cap">
+                    </div>&nbsp; &nbsp; 
+                    <div class="card" style="width: 5rem;height: 7rem;">
+                      <img class="card-img-top" src="https://images.unsplash.com/photo-1531966662811-c6501e46eda6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="Card image cap">
+                    </div>&nbsp; &nbsp; 
+                    <div class="card" style="width: 5rem;height: 7rem;">
+                      <img class="card-img-top" src="https://cdn.pixabay.com/photo/2014/12/22/09/14/ancient-577064__340.jpg" alt="Card image cap">
+                    </div>&nbsp; &nbsp; 
+                    <div class="card" style="width: 5rem;height: 7rem;">
+                      <img class="card-img-top" src="https://cdn.pixabay.com/photo/2014/11/13/23/34/transamerica-pyramid-530061_960_720.jpg" alt="Card image cap">
+                    </div>&nbsp; &nbsp;
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
+
+        <!-- Skeleton Template -->
         <section *ngIf="isLoading">
           <div class="row text-dark">
             <div class="col-lg-6" style="padding-top: 1%;">
@@ -276,6 +198,8 @@
             </div>
           </div>
         </section>
+
+        <!-- Post Template -->
         <section *ngIf="isLoading==false">
           <div class="row text-dark">
             <div class="col-lg-6" style="padding-top: 1%;">
@@ -311,21 +235,93 @@
         </section>
        
       </div>
+
+      <!-- Footer Section -->
       <footer class="footer bg-white shadow align-self-end py-3 px-xl-5 w-100">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-6 text-center text-md-left text-primary">
-              <p class="mb-2 mb-md-0">Your company &copy; 2018-2020</p>
-            </div>
-            <div class="col-md-6 text-center text-md-right text-gray-400">
-              <p class="mb-0">Design by <a href="https://bootstrapious.com/admin-templates" class="external text-gray-400">Bootstrapious</a></p>
-              <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
-            </div>
+            
           </div>
         </div>
       </footer>
+
+      <!-- Chat Popup -->
+      <div class="container">
+        <div class="row pt-3">
+            <div class="chat-main">
+                <div class="col-md-12 chat-header rounded-top bg-primary text-white">
+                    <div class="row">
+                        <div class="col-md-6 username pl-2">
+                            <i class="fa fa-circle text-success" aria-hidden="true"></i>
+                            <h6 class="m-0">Sundar Pichai</h6>
+                        </div>
+                        <div class="col-md-6 options text-right pr-2">
+                            <i class="fa fa-plus mr-2" aria-hidden="true"></i>
+                            <i class="fa fa-video-camera" aria-hidden="true"></i>
+                            <i class="fa fa-circle text-success live-video mr-1" aria-hidden="true"></i>
+                            <i class="fa fa-phone mr-2" aria-hidden="true"></i>
+                            <i class="fa fa-cog mr-2" aria-hidden="true"></i>
+                            <i class="fa fa-times hide-chat-box" aria-hidden="true"></i>
+                          </div>
+                    </div>
+                </div>
+                <div class="chat-content">
+                    <div class="col-md-12 chats border">
+                        <ul class="p-0">
+                            <li class="pl-2 pr-2 bg-primary rounded text-white text-center send-msg mb-1">
+                                Hi
+                            </li>
+                            <li class="p-1 rounded mb-1">
+                                <div class="receive-msg">
+                                    <img src="https://pbs.twimg.com/profile_images/864282616597405701/M-FEJMZ0_400x400.jpg">
+                                    <div class="receive-msg-desc  text-center mt-1 ml-1 pl-2 pr-2">
+                                        <p class="pl-2 pr-2 rounded">hello</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="pl-2 pr-2 bg-primary rounded text-white text-center send-msg mb-1">
+                                how are you ???
+                            </li>
+                            <li class="p-1 rounded mb-1">
+                                <div class="receive-msg">
+                                    <div class="receive-msg-img">
+                                        <img src="https://pbs.twimg.com/profile_images/864282616597405701/M-FEJMZ0_400x400.jpg">
+                                    </div>
+                                    <div class="receive-msg-desc rounded text-center mt-1 ml-1 pl-2 pr-2">
+                                        <p class="mb-0 mt-1 pl-2 pr-2 rounded-top rounded-right">I'm fine !!!</p>
+                                        <p class="mb-0 mt-1 pl-2 pr-2 rounded-bottom rounded-right">Where are you ?</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="pl-2 pr-2 bg-primary text-white text-center send-msg mb-1 rounded-top rounded-left">
+                                at california
+                            </li>
+                            <li class="pl-2 pr-2 bg-primary text-white text-center send-msg mb-1 rounded-bottom rounded-left">
+                                and where are you ?
+                            </li>
+                            <li class="p-1 rounded  mb-1">
+                                <div class="receive-msg">
+                                    <img src="https://pbs.twimg.com/profile_images/864282616597405701/M-FEJMZ0_200x200.jpg">
+                                    <div class="receive-msg-desc rounded text-center mt-1 ml-1 pl-2 pr-2">
+                                        <p class="pl-2 pr-2 rounded">now i'm at new york city</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="pl-2 pr-2 bg-primary rounded text-white text-center send-msg mb-1">
+                                Ok
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12 message-box border pl-2 pr-2 border-top-0">
+                        <input type="text" class="pl-0 pr-0 w-100" placeholder="Type a message..." />
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
+
+    </div>
+
 </div>
 
 <!-- JavaScript files-->
