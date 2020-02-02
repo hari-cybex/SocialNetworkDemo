@@ -1,0 +1,19 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Kubernetes Primer",
+      "content": "With the advent of microservices architecture these big monoliths are broken into independently runnable components. As this decouples the systems from each other that can be individually deployed and scaled. This ensures that changes in components are quickly updated with changing business requirements."
+    },
+    {
+      "id": 2,
+      "title": "Cloud Migration Approach",
+      "content": "Migrating to Public Cloud can deliver immense cost savings, business flexibility and product/service differentiation. This is evident from the experiences of leading companies like NetFlix, Lyft, CapitalOne and their migration to the Public Cloud. However, if this is not done in a systematic and planned manner, it can lead to tremendous cost, effort over runs, schedule slippages, potential compliance, security exposure."
+    },
+    {
+      "id": 3,
+      "title": "Migrating from Oracle - Evaluating alternatives",
+      "content": "As enterprises shift towards cloud, there is an accelerated trend to migrate out of Oracle to other cloud native databases. While planning such migration, businesses have several important considerations to plan for including ensuring that there’s business as usual in terms of services with no downtime."
+    }
+  ]
+}

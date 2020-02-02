@@ -1,0 +1,339 @@
+<div id="container">
+  <header class="header">
+    <!-- <nav class="navbar navbar-expand-lg px-4 py-2 bg-white shadow"> -->
+      <!-- <ul class="ml-auto d-flex align-items-center list-unstyled mb-0">
+        <li class="nav-item">
+          <form id="searchForm" class="ml-auto d-none d-lg-block">
+            <div class="form-group position-relative mb-0">
+              <button type="submit" style="top: -3px; left: 0;" class="position-absolute bg-white border-0 p-0"><i class="o-search-magnify-1 text-gray text-lg"></i></button>
+              <input type="search" placeholder="Search ..." class="form-control form-control-sm border-0 no-shadow pl-4">
+            </div>
+          </form>
+        </li>
+        <li class="nav-item dropdown mr-3"><a id="notifications" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle text-gray-400 px-1"><i class="fa fa-bell"></i><span class="notification-icon"></span></a>
+          <div aria-labelledby="notifications" class="dropdown-menu"><a href="#" class="dropdown-item">
+              <div class="d-flex align-items-center">
+                <div class="icon icon-sm bg-violet text-white"><i class="fab fa-twitter"></i></div>
+                <div class="text ml-2">
+                  <p class="mb-0">You have 2 followers</p>
+                </div>
+              </div></a><a href="#" class="dropdown-item"> 
+              <div class="d-flex align-items-center">
+                <div class="icon icon-sm bg-green text-white"><i class="fas fa-envelope"></i></div>
+                <div class="text ml-2">
+                  <p class="mb-0">You have 6 new messages</p>
+                </div>
+              </div></a><a href="#" class="dropdown-item">
+              <div class="d-flex align-items-center">
+                <div class="icon icon-sm bg-blue text-white"><i class="fas fa-upload"></i></div>
+                <div class="text ml-2">
+                  <p class="mb-0">Server rebooted</p>
+                </div>
+              </div></a><a href="#" class="dropdown-item">
+              <div class="d-flex align-items-center">
+                <div class="icon icon-sm bg-violet text-white"><i class="fab fa-twitter"></i></div>
+                <div class="text ml-2">
+                  <p class="mb-0">You have 2 followers</p>
+                </div>
+              </div></a>
+            <div class="dropdown-divider"></div><a href="#" class="dropdown-item text-center"><small class="font-weight-bold headings-font-family text-uppercase">View all notifications</small></a>
+          </div>
+        </li>
+        <li class="nav-item dropdown ml-auto"><a id="userInfo" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><img src="assets/img/avatar-6.jpg" alt="Jason Doe" style="max-width: 2.5rem;" class="img-fluid rounded-circle shadow"></a>
+          <div aria-labelledby="userInfo" class="dropdown-menu"><a href="#" class="dropdown-item"><strong class="d-block text-uppercase headings-font-family">Mark Stephen</strong><small>Web Developer</small></a>
+            <div class="dropdown-divider"></div><a href="#" class="dropdown-item">Settings</a><a href="#" class="dropdown-item">Activity log       </a>
+            <div class="dropdown-divider"></div><a href="login.html" class="dropdown-item">Logout</a>
+          </div>
+        </li>
+      </ul> -->
+  
+      <div style="width:100%;" class="bg-white shadow roundy p-4 h-100 d-flex align-items-center justify-content-between">
+        <div class="flex-grow-1 d-flex align-items-center">
+          <img style="width:50px;" src="assets/img/icon.png "/>
+          <form style="margin-left:30px;" id="searchForm" class="d-none d-lg-block">
+            <div class="form-group position-relative mb-0">
+              <input type="search" placeholder="Search" class="form-control form-control-sm border-0 no-shadow pl-4">
+              <button type="submit" style="top: -3px;" class="position-absolute bg-white border-0 p-0"><i class="o-search-magnify-1 text-gray text-lg"></i></button>
+            </div>
+          </form>
+        </div>
+        <ul class="ml-auto d-flex align-items-center list-unstyled mb-0">
+          <li class="nav-item dropdown mr-3"><i class="fas fa-home" style="color:grey;font-size:20px;"></i></li>
+          <li class="nav-item dropdown mr-3"><i class="fab fa-facebook-messenger" style="color:grey;font-size:20px;"></i></li>
+          <li class="nav-item dropdown mr-3"><i class="fas fa-user-friends" style="color:grey;font-size:20px;"></i></li>
+        </ul>
+        <ul class="ml-auto d-flex align-items-center list-unstyled mb-0">
+          <li class="nav-item dropdown mr-3"><i class="fas fa-bell" style="color:grey;font-size:20px;"></i></li>
+          <li class="nav-item dropdown mr-3"><i class="far fa-question-circle" style="color:grey;font-size:20px;"></i></li>
+          <li class="nav-item dropdown mr-3"><i class="fas fa-cog" style="color:grey;font-size:20px;"></i></li>
+          <li class="nav-item dropdown ml-auto"><img src="assets/img/avatar-6.jpg" alt="Harikrishnan" style="max-width: 2.5rem;" class="img-fluid rounded-circle shadow" />
+            <div aria-labelledby="userInfo" class="dropdown-menu"><a href="#" class="dropdown-item"><strong class="d-block text-uppercase headings-font-family">Mark Stephen</strong><small>Web Developer</small></a>
+              <div class="dropdown-divider"></div><a href="#" class="dropdown-item">Settings</a><a href="#" class="dropdown-item">Activity log       </a>
+              <div class="dropdown-divider"></div><a href="login.html" class="dropdown-item">Logout</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    <!-- </nav> -->
+  </header>
+  <div class="d-flex align-items-stretch">
+    <!-- <div id="sidebar" class="sidebar py-3">
+      <div class="text-gray-400 text-uppercase px-3 px-lg-4 py-4 font-weight-bold small headings-font-family">MAIN</div>
+      <ul class="sidebar-menu list-unstyled">
+            <li class="sidebar-list-item"><a href="index.html" class="sidebar-link text-muted active"><i class="o-home-1 mr-3 text-gray"></i><span>Home</span></a></li>
+            <li class="sidebar-list-item"><a href="charts.html" class="sidebar-link text-muted"><i class="o-sales-up-1 mr-3 text-gray"></i><span>Charts</span></a></li>
+            <li class="sidebar-list-item"><a href="tables.html" class="sidebar-link text-muted"><i class="o-table-content-1 mr-3 text-gray"></i><span>Tables</span></a></li>
+            <li class="sidebar-list-item"><a href="forms.html" class="sidebar-link text-muted"><i class="o-survey-1 mr-3 text-gray"></i><span>Forms</span></a></li>
+        <li class="sidebar-list-item"><a href="#" data-toggle="collapse" data-target="#pages" aria-expanded="false" aria-controls="pages" class="sidebar-link text-muted"><i class="o-wireframe-1 mr-3 text-gray"></i><span>Pages</span></a>
+          <div id="pages" class="collapse">
+            <ul class="sidebar-menu list-unstyled border-left border-primary border-thick">
+              <li class="sidebar-list-item"><a href="#" class="sidebar-link text-muted pl-lg-5">Page one</a></li>
+              <li class="sidebar-list-item"><a href="#" class="sidebar-link text-muted pl-lg-5">Page two</a></li>
+              <li class="sidebar-list-item"><a href="#" class="sidebar-link text-muted pl-lg-5">Page three</a></li>
+              <li class="sidebar-list-item"><a href="#" class="sidebar-link text-muted pl-lg-5">Page four</a></li>
+            </ul>
+          </div>
+        </li>
+            <li class="sidebar-list-item"><a href="login.html" class="sidebar-link text-muted"><i class="o-exit-1 mr-3 text-gray"></i><span>Login</span></a></li>
+      </ul>
+      <div class="text-gray-400 text-uppercase px-3 px-lg-4 py-4 font-weight-bold small headings-font-family">EXTRAS</div>
+      <ul class="sidebar-menu list-unstyled">
+            <li class="sidebar-list-item"><a href="#" class="sidebar-link text-muted"><i class="o-database-1 mr-3 text-gray"></i><span>Demo</span></a></li>
+            <li class="sidebar-list-item"><a href="#" class="sidebar-link text-muted"><i class="o-imac-screen-1 mr-3 text-gray"></i><span>Demo</span></a></li>
+            <li class="sidebar-list-item"><a href="#" class="sidebar-link text-muted"><i class="o-paperwork-1 mr-3 text-gray"></i><span>Demo</span></a></li>
+            <li class="sidebar-list-item"><a href="#" class="sidebar-link text-muted"><i class="o-wireframe-1 mr-3 text-gray"></i><span>Demo</span></a></li>
+      </ul>
+    </div> -->
+    <div class="page-holder w-100 d-flex flex-wrap">
+      <div class="container-fluid px-xl-5">
+        <section>
+          <div class="row">
+            
+            <div class="col-lg-6" style="padding-top: 1%;">
+              <div class="card" style="margin-left: 50%; width: 100%;">
+                <div class="card-body">
+                  <p style="color:gray">
+                    <i class="far fa-file-alt" style="color: blue;font-size: 20px;"></i>
+                    &nbsp; Create Post
+                  </p>
+                  <input type="text" class="form-control" (keyup.enter)="PostContent();" placeholder="What's on your mind, Hari?" style="width:100%;height:100px;" [(ngModel)]="newPostContent"/>
+                  <div class="col-md-3" style="padding:3%;padding-right: 0px;">
+                    <div (click)="PostContent();" class="bg-hover-gradient-blue shadow roundy" *ngIf="newPostContent.length>0">
+                      <div>
+                        <div class="text">
+                          <p>&nbsp;&nbsp;<i class="far fa-image" style="color:blue"></i>&nbsp; Post</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-med-3" style="padding:3%;padding-right: 0px;">
+                      <div class="bg-hover-gradient-blue shadow roundy">
+                        <div>
+                          <div class="text">
+                            <p style="margin-top: 20%;">&nbsp;&nbsp;<i class="far fa-image" style="color:blue"></i>&nbsp; Gallery</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-med-3" style="padding:3%;padding-right: 0px;">
+                      <div class="bg-hover-gradient-red shadow roundy d-flex align-items-center justify-content-between mb-4">
+                        <div class="flex-grow-1 d-flex align-items-center">
+                          <div class="text">
+                            <p style="margin-top: 20%;">&nbsp;&nbsp;<i class="fas fa-user-tag"></i>&nbsp; Tag Friends</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-med-3" style="padding:3%;padding-right: 0px;">
+                      <div class="bg-hover-gradient-warning shadow roundy d-flex align-items-center justify-content-between mb-4">
+                        <div class="flex-grow-1 d-flex align-items-center">
+                          <div class="text">
+                            <p style="margin-top: 20%;">&nbsp;&nbsp;<i class="far fa-laugh"></i>&nbsp; Feeling</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2" style="padding:3%;padding-right: 0px;">
+                      <div style="width: 10%;" class="bg-hover-gradient-gray-200 shadow roundy d-flex align-items-center justify-content-between mb-4">
+                        <div class="flex-grow-1 d-flex align-items-center">
+                          <div class="text">
+                            <p style="margin-top: 20%;"><i class="fas fa-ellipsis-v"></i></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6" style="padding-top: 1%;">
+              <div class="card" style="margin-left: 50%;height: 35%;">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-lg-10" style="padding-top:3%;padding-right: 0px;">
+                      <div class="bg-hover-gradient-blue shadow roundy d-flex align-items-center justify-content-between mb-4">
+                        <div class="flex-grow-1 d-flex align-items-center">
+                          <div class="text">
+                            <p><i class="far fa-image" style="color:blue"></i>&nbsp; Your Pages (1)</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="row text-dark">
+            <div class="col-lg-6" style="padding-top: 1%;">
+              <div class="card" style="margin-left: 50%;height: 100%;width: 100%;">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-lg-3" style="padding-top:3%;padding-right: 0px;">
+                      Stories
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section *ngIf="isLoading">
+          <div class="row text-dark">
+            <div class="col-lg-6" style="padding-top: 1%;">
+              <div class="card" style="margin-left: 50%;height: 100%;width: 100%;">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="fb-item">
+                      <div class="first-section-wrapper">
+                        <div class="gravatar">
+                          <ngx-skeleton-loader appearance="circle" [theme]="{ width: '80px', height: '80px' }">
+                          </ngx-skeleton-loader>
+                        </div>
+                        <div class="gravatar-title">
+                          <div>
+                            <ngx-skeleton-loader
+                              [theme]="{
+                                width: '500px',
+                                'border-radius': '0',
+                                height: '15px',
+                                'margin-bottom': '10px'
+                              }"
+                            ></ngx-skeleton-loader>
+                          </div>
+                          <div>
+                            <ngx-skeleton-loader
+                              [theme]="{     
+                                width: '170px',
+                                'border-radius': '0',
+                                height: '15px'
+                              }"
+                            ></ngx-skeleton-loader>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="second-section-wrapper">
+                        <div class="wrapper">
+                          <ngx-skeleton-loader
+                            [theme]="{
+                              width: '80%',
+                              'border-radius': '0',
+                              height: '15px',
+                              'margin-bottom': '10px'
+                            }"
+                          ></ngx-skeleton-loader>
+                        </div>
+                        <div class="wrapper">
+                          <ngx-skeleton-loader
+                            [theme]="{
+                              width: '90%',
+                              'border-radius': '0',
+                              height: '15px',
+                              'margin-bottom': '10px'
+                            }"
+                          ></ngx-skeleton-loader>
+                        </div>
+                        <div class="wrapper">
+                          <ngx-skeleton-loader
+                            [theme]="{
+                              width: '60%',
+                              'border-radius': '0',
+                              height: '15px',
+                              'margin-bottom': '10px'
+                            }"
+                          ></ngx-skeleton-loader>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section *ngIf="isLoading==false">
+          <div class="row text-dark">
+            <div class="col-lg-6" style="padding-top: 1%;">
+              <div class="card" style="margin-left: 50%;width: 100%;margin-top: 1%;" *ngFor="let post of posts.slice().reverse()">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="fb-item">
+                      <div class="first-section-wrapper">
+                        <div class="gravatar">
+                          <img src="{{ post.imageUrl }}" style="max-width: 4.0rem;" class="img-fluid rounded-circle shadow" />
+                          &nbsp;&nbsp;<b>{{ post.userName }}</b>
+                        </div>
+                        <div class="gravatar-title">
+                          <div>
+                            <br/>
+                            {{ post.content }}
+                          </div>
+                          <br/>
+                          <div class="row">
+                            <i class="far fa-thumbs-up" style="margin-left:5%"></i>{{ post.likeCount }}
+                            <i class="far fa-comment" style="margin-left:5%"></i>{{ post.commentCount }}
+                            <i class="fas fa-share" style="margin-left:5%"></i>{{ post.shareCount }}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+       
+      </div>
+      <footer class="footer bg-white shadow align-self-end py-3 px-xl-5 w-100">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-left text-primary">
+              <p class="mb-2 mb-md-0">Your company &copy; 2018-2020</p>
+            </div>
+            <div class="col-md-6 text-center text-md-right text-gray-400">
+              <p class="mb-0">Design by <a href="https://bootstrapious.com/admin-templates" class="external text-gray-400">Bootstrapious</a></p>
+              <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<!-- JavaScript files-->
+<script src="assets/vendor/jquery/jquery.min.js"></script>
+<script src="assets/vendor/popper.js/umd/popper.min.js"> </script>
+<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/vendor/jquery.cookie/jquery.cookie.js"> </script>
+<script src="assets/vendor/chart.js/Chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+<script src="assets/js/charts-home.js"></script>
+<script src="assets/js/front.js"></script>
